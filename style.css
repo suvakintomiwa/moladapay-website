@@ -212,3 +212,119 @@ body {
   margin-bottom: 1rem;
 }
 .footer p { color: #777; font-size: 0.9rem; }
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVENESS */
+/* ========================= */
+
+/* General tweaks for smaller screens */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+
+  /* Header: stack logo + nav on smaller screens */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  /* Hero section: stack image below text */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .hero-content {
+    flex: 1 1 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    color: #c5c5c5;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .hero-mockup {
+    flex: 1 1 100%;
+    margin-top: 2rem;
+  }
+
+  .app-mockup {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  /* Features: single-column layout */
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features h2 {
+    font-size: 1.6rem;
+  }
+
+  /* FAQ section */
+  .faq {
+    padding: 0 1rem;
+  }
+
+  .faq h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Footer */
+  .footer h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .footer .btn-primary {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* ========================= */
+/* 💻 Tablet Optimization */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-content h2 {
+    font-size: 2.4rem;
+  }
+  .hero-content p {
+    font-size: 1.05rem;
+  }
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
