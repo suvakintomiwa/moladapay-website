@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #0B0B0F 0%, #1b0520 50%, #23062b 100%);
+  color: #EDEDED;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo-icon img {
+  width: 145%;
+  height: 125%;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-text h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.logo-text p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+.nav a:hover { color: #fff; }
+
+/* HERO */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+}
+.hero-content { flex: 1 1 400px; }
+.hero-content h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+.hero-content p {
+  color: #b8b8b8;
+  line-height: 1.6;
+}
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #7C3AED, #C084FC);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+  transition: transform 0.2s;
+}
+.btn-primary:hover { transform: scale(1.05); }
+
+.btn-outline {
+  border: 1px solid #555;
+  background: transparent;
+  color: #ddd;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-outline:hover {
+  border-color: #aaa;
+  color: #fff;
+}
+
+.hero-mockup {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+.app-mockup {
+  width: 300px;
+  background: linear-gradient(180deg, #130118, #1b0321);
+  border: 1px solid #3c2242;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.app-mockup .balance h3 { font-size: 1.5rem; margin: 0.3rem 0; }
+.app-mockup .actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.app-mockup .actions button {
+  flex: 1;
+  background: #2a1032;
+  border: none;
+  color: #eee;
+  padding: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.app-mockup .recent ul { list-style: none; padding-top: 0.5rem; }
+.app-mockup .recent li {
+  display: flex;
+  justify-content: space-between;
+  color: #bbb;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* FEATURES */
+.features {
+  max-width: 1200px;
+  margin: 5rem auto;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.feature {
+  background: #16021d;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #2a0932;
+}
+.feature h3 { color: #C084FC; margin-bottom: 0.6rem; }
+
+/* FAQ */
+.faq {
+  max-width: 800px;
+  margin: 5rem auto;
+}
+.faq h2 { text-align: center; margin-bottom: 2rem; }
+.faq-item {
+  margin-bottom: 1.5rem;
+  background: #16021d;
+  border: 1px solid #2a0932;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+}
+.faq-item h3 { color: #C084FC; margin-bottom: 0.5rem; }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-top: 1px solid #2a0932;
+}
+.footer h2 {
+  margin-bottom: 1rem;
+}
+.footer .btn-primary {
+  margin-bottom: 1rem;
+}
+.footer p { color: #777; font-size: 0.9rem; }
