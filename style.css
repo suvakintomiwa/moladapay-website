@@ -328,3 +328,51 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+
+/* ===================== */
+/* 🚑 MOBILE ALIGNMENT FIX */
+/* ===================== */
+
+/* Ensure no section overflows the viewport */
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Force sections to take full width */
+section, header, footer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Prevent flex children from pushing layout */
+.hero, .header, .features, .faq, .footer {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fix hero mockup sizing */
+.hero-mockup, .app-mockup {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Reset unwanted browser gaps */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fix for Safari’s flex overflow bug */
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
