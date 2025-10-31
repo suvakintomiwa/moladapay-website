@@ -5,3 +5,8 @@ window.addEventListener('scroll', () => {
     if (rect.top < window.innerHeight - 100) el.classList.add('visible')
   })
 })
+
+    // Opens PDF whitepaper
+    document.getElementById('whitepaper').addEventListener('click', () => {
+      window.open('/pitchdeck.pdf', '_blank');
+    });
